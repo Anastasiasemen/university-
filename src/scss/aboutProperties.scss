@@ -1,0 +1,39 @@
+.aboutProperties.container {
+  background-color: $lightGray;
+  display: flex;
+  padding: 10% 0 7%;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: flex-end;
+
+  .aboutProperties-characteristic {
+    @include centerColumn;
+
+    .aboutProperties-characteristic-label {
+      @include centerColumn;
+
+      .aboutProperties-characteristic-label-name {
+        font-family: $FontRegularTitle;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: $black;
+        text-transform: uppercase;
+        margin: 2% 0 30%;
+      }
+    }
+
+    .aboutProperties-characteristic-descr {
+      font-family: $FontRegular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center;
+      color: $black;
+      width: 75%;
+    }
+  }
+}

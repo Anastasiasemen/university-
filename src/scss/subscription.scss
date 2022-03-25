@@ -1,0 +1,107 @@
+.subscription.container {
+  background: url("../img/subscription.png") no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 4%;
+
+  .subscription-customerService-title,
+  .subscription-mailing-title {
+    @include title;
+    font-style: normal;
+    font-weight: 400;
+    margin: 7% 0 4%;
+  }
+  .subscription-customerService-addition,
+  .subscription-mailing-addition,
+  .subscription-customerService-link {
+    font-family: $FontRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  .subscription-customerService {
+    @include centerColumn;
+    width: 50%;
+
+    .subscription-customerService-addition {
+      width: 50%;
+    }
+    .subscription-customerService-link {
+      margin-top: 3%;
+    }
+    .subscription-customerService-link:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .subscription-mailing {
+    @include centerColumn;
+    width: 50%;
+
+    .subscription-mailing-addition {
+      width: 60%;
+      margin-bottom: 10%;
+    }
+
+    .subscription-mailing-label {
+      font-family: $FontRegular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+      margin-bottom: 1%;
+    }
+
+    .subscription-mailing-mail {
+      input {
+        background: rgba(0, 0, 0, 0.3);
+        border-width: 0;
+        font-family: $FontRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: left;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.6);
+        padding: 25px 216px 4px 4px;
+      }
+      input:active,
+      :hover,
+      :focus {
+        outline: 0;
+      }
+      input:focus::-webkit-input-placeholder {
+        color: transparent;
+      }
+    }
+    .subscription-mailing-btn {
+      input {
+        background: $ochre;
+        border: 0;
+        margin-top: 7%;
+        padding: 8px 45px;
+        font-family: $FontRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+      }
+      input:hover {
+        background: rgba(121, 102, 29, 0.94);
+      }
+    }
+  }
+}

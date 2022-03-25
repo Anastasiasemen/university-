@@ -1,0 +1,17 @@
+.header.container {
+  background-image: url(../img/Rectangle.png);
+  @include centerColumn;
+  padding: 10% 0;
+  .header-description {
+    font-family: PTS55F;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    width: 50%;
+    padding-top: 80px;
+  }
+}

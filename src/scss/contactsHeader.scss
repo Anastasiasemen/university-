@@ -1,0 +1,80 @@
+.contactsHeader.container {
+  background-color: $backgroundCon;
+  padding: 5% 0 10%;
+
+  .contactsHeader-title {
+    display: flex;
+    flex-direction: column;
+
+    .contactsHeader-title-name {
+      @include title;
+      color: $black;
+      text-align: left;
+      margin-left: 12%;
+    }
+
+    .contactsHeader-title-line {
+      margin: 0 10% 5% 10%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .contactsHeader-information {
+    margin: auto;
+
+    th,
+    td {
+      font-weight: normal;
+      text-align: center;
+
+      .contactsHeader-information-item {
+        margin: 0 70px 70px 0;
+        .contactsHeader-information-item-number,
+        .contactsHeader-information-item-time,
+        .contactsHeader-information-item-workingDays {
+          font-family: $FontRegular;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+        }
+
+        .contactsHeader-information-item-title {
+          font-family: $FontRegularTitle;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 25px;
+          text-align: center;
+          text-transform: uppercase;
+          margin-bottom: 18px;
+          span {
+            font-family: $FontRegular;
+          }
+        }
+
+        .contactsHeader-information-item-number,
+        .contactsHeader-information-item-time,
+        .contactsHeader-information-item-workingDays,
+        .contactsHeader-information-item-data {
+          font-family: $FontRegular;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .contactsHeader-map {
+    width: 80%;
+    margin: 5% auto 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}

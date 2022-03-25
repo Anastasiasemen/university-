@@ -1,0 +1,48 @@
+@mixin title {
+  font-family: $FontRegularTitle;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+}
+@mixin btn-primary {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  font-family: $FontRegular;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 12px 28px;
+}
+@mixin centerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+@mixin btn-buy {
+  border: 2px solid #fffcfc;
+  box-sizing: border-box;
+  text-align: center;
+  color: $white;
+  font-family: $FontRegular;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  background: transparent;
+  padding: 7px 10px;
+}
+
+@mixin textLinks {
+  font-family: $FontRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}

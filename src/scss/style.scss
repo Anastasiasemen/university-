@@ -1,0 +1,27 @@
+@import "./constants";
+@import "./mixins";
+@import "./fonts";
+
+//index
+@import "./navbar.scss";
+@import "./header.scss";
+@import "./newCollection.scss";
+@import "./catalog.scss";
+@import "./subscription.scss";
+@import "./footer.scss";
+
+//about
+@import "./aboutHeader.scss";
+@import "./aboutProperties.scss";
+@import "./aboutComments.scss";
+@import "./aboutFooter.scss";
+
+//contacts
+@import "./contactsHeader.scss";
+
+body {
+  margin: 0;
+  .content {
+    width: 100%;
+  }
+}

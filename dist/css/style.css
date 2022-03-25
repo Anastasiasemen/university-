@@ -1,0 +1,766 @@
+@font-face {
+  font-family: PTS55F;
+  font-display: swap;
+  src: url("../fonts/PTS55F.woff2") format("woff2"), url("../fonts/PTS55F.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay-Bold;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PTS75F;
+  font-display: swap;
+  src: url("../fonts/PTS75F.woff2") format("woff2"), url("../fonts/PTS75F.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PTS76F;
+  font-display: swap;
+  src: url("../fonts/PTS76F.woff2") format("woff2"), url("../fonts/PTS76F.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay-Regular;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PTS56F;
+  font-display: swap;
+  src: url("../fonts/PTS56F.woff2") format("woff2"), url("../fonts/PTS56F.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar.container {
+  background-color: #0f0f0f;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.navbar.container .navbar-logo {
+  align-items: center;
+  justify-content: center;
+}
+.navbar.container .navbar-logo img {
+  padding: 20px;
+}
+.navbar.container .navbar-logo img:hover {
+  background: #1f1f1f;
+}
+.navbar.container .navbar-logo,
+.navbar.container .navbar-menu {
+  display: flex;
+  width: 50%;
+  color: #969696;
+  font-family: "PTS55F";
+  font-size: 14px;
+}
+.navbar.container .navbar-menu ul {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  line-height: 18px;
+  padding-inline-start: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.navbar.container .navbar-menu ul li {
+  padding: 31px 20px;
+}
+.navbar.container .navbar-menu ul li:hover {
+  color: #ffffff;
+  background: #1f1f1f;
+}
+.navbar.container .navbar-menu-search {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.navbar.container .navbar-menu-search .navbar-menu-search-img {
+  display: block;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.header.container {
+  background-image: url(../img/Rectangle.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 10% 0;
+}
+.header.container .header-description {
+  font-family: PTS55F;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 50%;
+  padding-top: 80px;
+}
+
+.newCollection.container {
+  display: flex;
+}
+.newCollection.container .newCollection-img {
+  width: 50%;
+}
+.newCollection.container .newCollection-img img {
+  width: 100%;
+  height: 100%;
+}
+.newCollection.container .newCollection-description {
+  width: 50%;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding-top: 7%;
+}
+.newCollection.container .newCollection-description .newCollection-description-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.newCollection.container .newCollection-description .newCollection-description-title .newCollection-description-title-name {
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 7%;
+}
+.newCollection.container .newCollection-description .newCollection-description-text {
+  width: 65%;
+  padding-top: 40px;
+  font-family: "PTS55F";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+.newCollection.container .newCollection-description .newCollection-description-btn {
+  padding: 7% 0 10%;
+}
+.newCollection.container .newCollection-description .newCollection-description-btn input {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "PTS55F";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 12px 28px;
+  background: transparent;
+}
+.newCollection.container .newCollection-description .newCollection-description-btn input:hover {
+  background-color: #1f1f1f;
+}
+
+.catalog.container {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 10%;
+}
+.catalog.container .catalog-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 10% 0 5%;
+}
+.catalog.container .catalog-title .catalog-title-name {
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 7%;
+}
+.catalog.container .catalog-products .catalog-products-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 23px 23px 0;
+}
+.catalog.container .catalog-products .catalog-products-item .catalog-products-item-img {
+  background-color: #191b1c;
+  padding: 17% 0;
+}
+.catalog.container .catalog-products .catalog-products-item .catalog-products-item-decr {
+  display: flex;
+  flex-direction: row;
+  align-content: left;
+  text-align: left;
+}
+.catalog.container .catalog-products .catalog-products-item .catalog-products-item-decr .catalog-products-item-decr-brand {
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: normal;
+  margin: 25px 0 10px;
+}
+.catalog.container .catalog-products .catalog-products-item .catalog-products-item-decr .catalog-products-item-decr-price {
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 16px;
+  line-height: 19px;
+  color: #d0d0d0;
+  font-weight: normal;
+}
+.catalog.container .catalog-products .catalog-products-item .catalog-products-item-decr .catalog-products-item-decr-btn {
+  display: none;
+}
+.catalog.container .catalog-products-item:hover .catalog-products-item-img {
+  background-color: #191b1c;
+  padding: 12% 0;
+}
+.catalog.container .catalog-products-item:hover .catalog-products-item-img img {
+  width: 110%;
+}
+.catalog.container .catalog-products-item:hover .catalog-products-item-decr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.catalog.container .catalog-products-item:hover .catalog-products-item-decr .catalog-products-item-decr-brand {
+  font-weight: 400;
+  font-size: 22px;
+}
+.catalog.container .catalog-products-item:hover .catalog-products-item-decr .catalog-products-item-decr-price {
+  font-weight: 400;
+  font-size: 22px;
+}
+.catalog.container .catalog-products-item:hover .catalog-products-item-decr .catalog-products-item-decr-btn {
+  display: block;
+}
+.catalog.container .catalog-products-item:hover .catalog-products-item-decr .catalog-products-item-decr-btn input {
+  border: 2px solid #fffcfc;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+  font-family: "PTS55F";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  background: transparent;
+  padding: 7px 10px;
+}
+
+.subscription.container {
+  background: url("../img/subscription.png") no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 4%;
+}
+.subscription.container .subscription-customerService-title,
+.subscription.container .subscription-mailing-title {
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  margin: 7% 0 4%;
+}
+.subscription.container .subscription-customerService-addition,
+.subscription.container .subscription-mailing-addition,
+.subscription.container .subscription-customerService-link {
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.subscription.container .subscription-customerService {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 50%;
+}
+.subscription.container .subscription-customerService .subscription-customerService-addition {
+  width: 50%;
+}
+.subscription.container .subscription-customerService .subscription-customerService-link {
+  margin-top: 3%;
+}
+.subscription.container .subscription-customerService .subscription-customerService-link:hover {
+  text-decoration: underline;
+}
+.subscription.container .subscription-mailing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 50%;
+}
+.subscription.container .subscription-mailing .subscription-mailing-addition {
+  width: 60%;
+  margin-bottom: 10%;
+}
+.subscription.container .subscription-mailing .subscription-mailing-label {
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 1%;
+}
+.subscription.container .subscription-mailing .subscription-mailing-mail input {
+  background: rgba(0, 0, 0, 0.3);
+  border-width: 0;
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 25px 216px 4px 4px;
+}
+.subscription.container .subscription-mailing .subscription-mailing-mail input:active,
+.subscription.container .subscription-mailing .subscription-mailing-mail :hover,
+.subscription.container .subscription-mailing .subscription-mailing-mail :focus {
+  outline: 0;
+}
+.subscription.container .subscription-mailing .subscription-mailing-mail input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.subscription.container .subscription-mailing .subscription-mailing-btn input {
+  background: rgba(164, 141, 50, 0.94);
+  border: 0;
+  margin-top: 7%;
+  padding: 8px 45px;
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.subscription.container .subscription-mailing .subscription-mailing-btn input:hover {
+  background: rgba(121, 102, 29, 0.94);
+}
+
+.footer.container {
+  background-color: rgba(164, 141, 50, 0.94);
+  display: flex;
+  justify-content: space-around;
+  flex-shrink: 0 1 0;
+  padding-top: 72px;
+  color: #333333;
+}
+.footer.container a {
+  text-decoration: none;
+  color: #333333;
+  text-align: left;
+  margin-bottom: 15px;
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.footer.container a:hover {
+  font-weight: bold;
+}
+.footer.container .footer-title {
+  font-family: "PlayfairDisplay-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.footer.container .footer-usefulLinks-links {
+  margin-top: 30px;
+  padding-inline-start: 0;
+}
+.footer.container .footer-usefulLinks-links li {
+  list-style-type: none;
+  text-align: left;
+  margin-bottom: 15px;
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.footer.container .footer-usefulLinks-links li:hover {
+  font-weight: bold;
+}
+.footer.container .footer-contacts-links {
+  margin-top: 30px;
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.footer.container .footer-contacts-links .footer-contacts-links-item {
+  display: flex;
+  margin-bottom: 15px;
+}
+.footer.container .footer-contacts-links .footer-contacts-links-item .footer-contacts-links-item-label {
+  margin-right: 10px;
+}
+.footer.container .footer-socialNet {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.footer.container .footer-socialNet .footer-socialNet-descr {
+  margin: 30px 0 22px;
+  width: 95%;
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.footer.container .footer-socialNet .footer-socialNet-labels {
+  display: flex;
+}
+.footer.container .footer-socialNet .footer-socialNet-labels .footer-socialNet-labels-link {
+  margin-right: 20px;
+}
+.footer.container .footer-socialNet .footer-socialNet-labels .footer-socialNet-labels-link:hover {
+  border-bottom: 2px solid #333333;
+}
+
+.aboutHeader.container {
+  background: url("../img/about.png") center no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 15% 0;
+}
+
+.aboutProperties.container {
+  background-color: #c4c4c4;
+  display: flex;
+  padding: 10% 0 7%;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: flex-end;
+}
+.aboutProperties.container .aboutProperties-characteristic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.aboutProperties.container .aboutProperties-characteristic .aboutProperties-characteristic-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.aboutProperties.container .aboutProperties-characteristic .aboutProperties-characteristic-label .aboutProperties-characteristic-label-name {
+  font-family: "PlayfairDisplay-Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 2% 0 30%;
+}
+.aboutProperties.container .aboutProperties-characteristic .aboutProperties-characteristic-descr {
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  width: 75%;
+}
+
+.aboutComments.container {
+  background-color: #c4c4c4;
+  display: flex;
+  justify-content: space-around;
+  padding: 7% 0 10%;
+}
+.aboutComments.container .aboutComments-people {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.aboutComments.container .aboutComments-people .aboutComments-people-personalData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.aboutComments.container .aboutComments-people .aboutComments-people-personalData .aboutComments-people-personalData-name {
+  font-family: "PlayfairDisplay-Regular";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+.aboutComments.container .aboutComments-people .aboutComments-people-personalData .aboutComments-people-personalData-date {
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.aboutComments.container .aboutComments-people .aboutComments-people-feedback {
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  width: 85%;
+  margin-top: 7%;
+}
+
+.aboutFooter.container {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around;
+  flex-shrink: 0 1 0;
+  padding-top: 72px;
+  color: #ffffff;
+}
+.aboutFooter.container a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 15px;
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.aboutFooter.container a:hover {
+  font-weight: bold;
+}
+.aboutFooter.container .footer-title {
+  font-family: "PlayfairDisplay-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.aboutFooter.container .footer-usefulLinks-links {
+  margin-top: 30px;
+  padding-inline-start: 0;
+}
+.aboutFooter.container .footer-usefulLinks-links li {
+  list-style-type: none;
+  text-align: left;
+  margin-bottom: 15px;
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.aboutFooter.container .footer-usefulLinks-links li:hover {
+  font-weight: bold;
+}
+.aboutFooter.container .footer-usefulLinks-links a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 15px;
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.aboutFooter.container .footer-usefulLinks-links a:hover {
+  font-weight: bold;
+}
+.aboutFooter.container .footer-contacts-links {
+  margin-top: 30px;
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.aboutFooter.container .footer-contacts-links .footer-contacts-links-item {
+  display: flex;
+  margin-bottom: 15px;
+}
+.aboutFooter.container .footer-contacts-links .footer-contacts-links-item .footer-contacts-links-item-label {
+  margin-right: 10px;
+}
+.aboutFooter.container .footer-socialNet {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.aboutFooter.container .footer-socialNet .footer-socialNet-descr {
+  margin: 30px 0 22px;
+  width: 95%;
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.aboutFooter.container .footer-socialNet .footer-socialNet-labels {
+  display: flex;
+}
+.aboutFooter.container .footer-socialNet .footer-socialNet-labels .footer-socialNet-labels-link {
+  margin-right: 20px;
+}
+.aboutFooter.container .footer-socialNet .footer-socialNet-labels .footer-socialNet-labels-link:hover {
+  border-bottom: 2px solid #333333;
+}
+
+.contactsHeader.container {
+  background-color: #e5e5e5;
+  padding: 5% 0 10%;
+}
+.contactsHeader.container .contactsHeader-title {
+  display: flex;
+  flex-direction: column;
+}
+.contactsHeader.container .contactsHeader-title .contactsHeader-title-name {
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  color: #000000;
+  text-align: left;
+  margin-left: 12%;
+}
+.contactsHeader.container .contactsHeader-title .contactsHeader-title-line {
+  margin: 0 10% 5% 10%;
+}
+.contactsHeader.container .contactsHeader-title .contactsHeader-title-line img {
+  width: 100%;
+}
+.contactsHeader.container .contactsHeader-information {
+  margin: auto;
+}
+.contactsHeader.container .contactsHeader-information th,
+.contactsHeader.container .contactsHeader-information td {
+  font-weight: normal;
+  text-align: center;
+}
+.contactsHeader.container .contactsHeader-information th .contactsHeader-information-item,
+.contactsHeader.container .contactsHeader-information td .contactsHeader-information-item {
+  margin: 0 70px 70px 0;
+}
+.contactsHeader.container .contactsHeader-information th .contactsHeader-information-item .contactsHeader-information-item-number,
+.contactsHeader.container .contactsHeader-information th .contactsHeader-information-item .contactsHeader-information-item-time,
+.contactsHeader.container .contactsHeader-information th .contactsHeader-information-item .contactsHeader-information-item-workingDays,
+.contactsHeader.container .contactsHeader-information td .contactsHeader-information-item .contactsHeader-information-item-number,
+.contactsHeader.container .contactsHeader-information td .contactsHeader-information-item .contactsHeader-information-item-time,
+.contactsHeader.container .contactsHeader-information td .contactsHeader-information-item .contactsHeader-information-item-workingDays {
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+.contactsHeader.container .contactsHeader-information th .contactsHeader-information-item .contactsHeader-information-item-title,
+.contactsHeader.container .contactsHeader-information td .contactsHeader-information-item .contactsHeader-information-item-title {
+  font-family: "PlayfairDisplay-Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.contactsHeader.container .contactsHeader-information th .contactsHeader-information-item .contactsHeader-information-item-title span,
+.contactsHeader.container .contactsHeader-information td .contactsHeader-information-item .contactsHeader-information-item-title span {
+  font-family: "PTS55F";
+}
+.contactsHeader.container .contactsHeader-information th .contactsHeader-information-item .contactsHeader-information-item-number,
+.contactsHeader.container .contactsHeader-information th .contactsHeader-information-item .contactsHeader-information-item-time,
+.contactsHeader.container .contactsHeader-information th .contactsHeader-information-item .contactsHeader-information-item-workingDays,
+.contactsHeader.container .contactsHeader-information th .contactsHeader-information-item .contactsHeader-information-item-data,
+.contactsHeader.container .contactsHeader-information td .contactsHeader-information-item .contactsHeader-information-item-number,
+.contactsHeader.container .contactsHeader-information td .contactsHeader-information-item .contactsHeader-information-item-time,
+.contactsHeader.container .contactsHeader-information td .contactsHeader-information-item .contactsHeader-information-item-workingDays,
+.contactsHeader.container .contactsHeader-information td .contactsHeader-information-item .contactsHeader-information-item-data {
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+.contactsHeader.container .contactsHeader-map {
+  width: 80%;
+  margin: 5% auto 0;
+}
+.contactsHeader.container .contactsHeader-map img {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+body .content {
+  width: 100%;
+}

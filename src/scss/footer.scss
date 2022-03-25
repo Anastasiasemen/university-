@@ -1,0 +1,78 @@
+.footer.container {
+  background-color: $ochre;
+  display: flex;
+  justify-content: space-around;
+  flex-shrink: 0 1 0;
+  padding-top: 72px;
+  color: #333333;
+
+  a {
+    text-decoration: none;
+    color: #333333;
+    text-align: left;
+    margin-bottom: 15px;
+    @include textLinks;
+  }
+  a:hover {
+    font-weight: bold;
+  }
+
+  .footer-title {
+    font-family: $FontRegularTitle;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .footer-usefulLinks-links {
+    margin-top: 30px;
+    padding-inline-start: 0;
+    li {
+      list-style-type: none;
+      text-align: left;
+      margin-bottom: 15px;
+      @include textLinks;
+    }
+    li:hover {
+      font-weight: bold;
+    }
+  }
+
+  .footer-contacts-links {
+    margin-top: 30px;
+    @include textLinks;
+
+    .footer-contacts-links-item {
+      display: flex;
+      margin-bottom: 15px;
+      .footer-contacts-links-item-label {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .footer-socialNet {
+    display: flex;
+    flex-direction: column;
+    width: 20%; //?
+    .footer-socialNet-descr {
+      margin: 30px 0 22px;
+      width: 95%; //err
+      @include textLinks;
+    }
+    .footer-socialNet-labels {
+      display: flex;
+
+      .footer-socialNet-labels-link {
+        margin-right: 20px;
+      }
+      .footer-socialNet-labels-link:hover {
+        border-bottom: 2px solid #333333;
+      }
+    }
+  }
+}

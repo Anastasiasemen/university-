@@ -1,0 +1,5 @@
+.aboutHeader.container {
+  background: url("../img/about.png") center no-repeat;
+  @include centerColumn;
+  padding: 15% 0;
+}
