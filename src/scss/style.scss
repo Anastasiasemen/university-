@@ -19,6 +19,11 @@
 //contacts
 @import "./contactsHeader.scss";
 
+//catalog
+@import "./mensParfumes.scss";
+@import "./womensParfumes.scss";
+@import "./catalogProduct.scss";
+
 body {
   margin: 0;
   .content {

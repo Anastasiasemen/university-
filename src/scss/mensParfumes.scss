@@ -1,0 +1,54 @@
+.mensParfumes.container {
+  background: url(../img/mensParfumes.png) 0 0 no-repeat;
+  padding: 30%;
+  .mensParfumes-info {
+    color: $white;
+    @include centerColumn;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+
+    .mensParfumes-info-title {
+      @include title;
+      font-size: 35px;
+      line-height: 40px;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      width: 80%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .mensParfumes-info-link {
+      display: flex;
+      align-items: center;
+      margin-top: 18px;
+      cursor: pointer;
+
+      .mensParfumes-info-link-name {
+        @include linkArrow;
+      }
+
+      img {
+        width: 9%;
+        height: 9%;
+      }
+    }
+
+    .mensParfumes-info-link:after {
+      display: block;
+      position: absolute;
+      top: 100%;
+      width: 0; /*задаём длинну линии до наведения курсора*/
+      height: 2px;
+      background-color: $lightGray;
+      content: "";
+      transition: width 0.3s ease-out;
+    }
+    .mensParfumes-info-link:hover:after,
+    .mensParfumes-info-link:focus:after {
+      width: 40%;
+    }
+  }
+}

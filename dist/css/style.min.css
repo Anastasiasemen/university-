@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: PTS55F;
   font-display: swap;
@@ -73,6 +74,10 @@
   padding-inline-start: 0px;
   margin-block-start: 0;
   margin-block-end: 0;
+}
+.navbar.container .navbar-menu ul a {
+  color: #969696;
+  text-decoration: none;
 }
 .navbar.container .navbar-menu ul li {
   padding: 31px 20px;
@@ -756,6 +761,214 @@
 }
 .contactsHeader.container .contactsHeader-map img {
   width: 100%;
+}
+
+.mensParfumes.container {
+  background: url(../img/mensParfumes.png) 0 0 no-repeat;
+  padding: 30%;
+}
+.mensParfumes.container .mensParfumes-info {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+.mensParfumes.container .mensParfumes-info .mensParfumes-info-title {
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+.mensParfumes.container .mensParfumes-info .mensParfumes-info-link {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  cursor: pointer;
+}
+.mensParfumes.container .mensParfumes-info .mensParfumes-info-link .mensParfumes-info-link-name {
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.mensParfumes.container .mensParfumes-info .mensParfumes-info-link img {
+  width: 9%;
+  height: 9%;
+}
+.mensParfumes.container .mensParfumes-info .mensParfumes-info-link:after {
+  display: block;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  /*задаём длинну линии до наведения курсора*/
+  height: 2px;
+  background-color: #c4c4c4;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.mensParfumes.container .mensParfumes-info .mensParfumes-info-link:hover:after,
+.mensParfumes.container .mensParfumes-info .mensParfumes-info-link:focus:after {
+  width: 40%;
+}
+
+.womensParfumes.container {
+  display: flex;
+  margin: 0;
+}
+.womensParfumes.container .womensParfumes-product {
+  width: 50%;
+}
+.womensParfumes.container .womensParfumes-product img {
+  width: 100%;
+  height: 100%;
+}
+.womensParfumes.container .womensParfumes-info {
+  width: 50%;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.womensParfumes.container .womensParfumes-info .womensParfumes-info-title {
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  width: 50%;
+}
+.womensParfumes.container .womensParfumes-info .womensParfumes-info-link {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  cursor: pointer;
+}
+.womensParfumes.container .womensParfumes-info .womensParfumes-info-link .womensParfumes-info-link-name {
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.womensParfumes.container .womensParfumes-info .womensParfumes-info-link img {
+  width: 9%;
+}
+.womensParfumes.container .womensParfumes-info .womensParfumes-info-link:after {
+  display: block;
+  position: absolute;
+  top: 194%;
+  width: 0;
+  /*задаём длинну линии до наведения курсора*/
+  height: 1px;
+  background-color: #beb5b5;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.womensParfumes.container .womensParfumes-info .womensParfumes-info-link:hover:after,
+.womensParfumes.container .womensParfumes-info .womensParfumes-info-link:focus:after {
+  width: 12%;
+}
+
+.catalogProduct.container {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 90px 0;
+  display: flex;
+}
+.catalogProduct.container .catalogProduct-aside {
+  margin-left: 50px;
+}
+.catalogProduct.container .catalogProduct-aside .catalogProduct-aside-parfumer {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  margin-bottom: 30px;
+}
+.catalogProduct.container .catalogProduct-aside .catalogProduct-aside-parfumer .catalogProduct-aside-parfumer-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.catalogProduct.container .catalogProduct-aside .catalogProduct-aside-parfumer .catalogProduct-aside-parfumer-title .catalogProduct-aside-parfumer-name {
+  font-family: "PTS55F";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-right: 7px;
+}
+.catalogProduct.container .catalogProduct-aside .catalogProduct-aside-parfumer .catalogProduct-aside-parfumer-title .catalogProduct-aside-parfumer-arrow img {
+  width: 70%;
+}
+.catalogProduct.container .catalogProduct-aside .catalogProduct-aside-parfumer .catalogProduct-aside-parfumer-search {
+  border: none;
+  width: 50%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ffffff;
+}
+.catalogProduct.container .catalogProduct-aside .catalogProduct-aside-parfumer .catalogProduct-aside-parfumer-search input {
+  background: transparent;
+  width: 100%;
+  border: 2px solid #ffffff;
+  padding: 2px;
+  color: #ffffff;
+  font-family: "PTS55F";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.catalogProduct.container .catalogProduct-aside .catalogProduct-aside-parfumer .catalogProduct-aside-parfumer-search input:active,
+.catalogProduct.container .catalogProduct-aside .catalogProduct-aside-parfumer .catalogProduct-aside-parfumer-search :hover,
+.catalogProduct.container .catalogProduct-aside .catalogProduct-aside-parfumer .catalogProduct-aside-parfumer-search :focus {
+  outline: none;
+}
+.catalogProduct.container .catalogProduct-aside .catalogProduct-aside-parfumer .catalogProduct-aside-parfumer-search input:active,
+.catalogProduct.container .catalogProduct-aside .catalogProduct-aside-parfumer .catalogProduct-aside-parfumer-search :focus {
+  background-image: none;
+}
+.catalogProduct.container .catalogProduct-aside .catalogProduct-aside-gender {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 body {

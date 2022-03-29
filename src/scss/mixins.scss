@@ -46,3 +46,25 @@
   font-size: 16px;
   line-height: 21px;
 }
+
+@mixin linkArrow {
+  font-family: $FontRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+@mixin asideTitle {
+  font-family: $FontRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: $white;
+}

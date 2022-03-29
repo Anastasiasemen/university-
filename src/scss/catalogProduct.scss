@@ -1,0 +1,66 @@
+.catalogProduct.container {
+  background-color: $black;
+  color: $white;
+  padding: 90px 0;
+  display: flex;
+
+  .catalogProduct-aside {
+    margin-left: 50px;
+    .catalogProduct-aside-parfumer {
+      display: flex;
+      flex-direction: column;
+      justify-items: start;
+      margin-bottom: 30px;
+      .catalogProduct-aside-parfumer-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        .catalogProduct-aside-parfumer-name {
+          @include asideTitle;
+          margin-right: 7px;
+        }
+        .catalogProduct-aside-parfumer-arrow {
+          img {
+            width: 70%;
+          }
+        }
+      }
+
+      .catalogProduct-aside-parfumer-search {
+        border: none;
+        width: 50%;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $white;
+        input {
+          background: transparent;
+          width: 100%;
+          border: 2px solid $white;
+          padding: 2px;
+          color: $white;
+          font-family: $FontRegular;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 20px;
+          background-image: url(../img/search.png);
+          background-repeat: no-repeat;
+          background-position: right;
+        }
+        input:active,
+        :hover,
+        :focus {
+          outline: none;
+        }
+        input:active,
+        :focus {
+          background-image: none;
+        }
+      }
+    }
+
+    .catalogProduct-aside-gender {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
