@@ -1,0 +1,40 @@
+.productDetails.container {
+  @include centerColumn;
+  background-color: $lightGray;
+  padding: 5% 0 5%;
+
+  .productDetails-title {
+    @include title;
+    font-size: 30px;
+    color: $black;
+    padding-bottom: 0.5%;
+    width: 10%;
+    font-weight: bold;
+    border-bottom: 3px solid $black;
+  }
+
+  .productDetails-descr {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 5%;
+    width: 50%;
+    padding-left: 20%;
+
+    .productDetails-descr-item {
+      .productDetails-descr-item-name {
+        @include asideTitle;
+        font-family: $FontRegularTitle;
+        font-weight: 600;
+        color: $black;
+        text-align: left;
+      }
+      .productDetails-descr-item-dop {
+        @include textLinks;
+        text-align: left;
+        width: 70%;
+        margin: 2% 0;
+      }
+    }
+  }
+}

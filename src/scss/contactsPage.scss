@@ -1,0 +1,77 @@
+.contactsPage.container {
+  background-color: $black;
+  padding: 4% 0 0;
+
+  .contactsPage-title {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin: 0 auto 3%;
+
+    .contactsPage-title-name {
+      @include title;
+      padding-bottom: 5%;
+      border-bottom: 1px white solid;
+      
+    }
+  }
+
+  .contactsPage-inf{
+    display: flex;
+    padding: 2% 8% 5%;
+    .contactsPage-inf-contacts, 
+    .contactsPage-inf-map{
+      width: 50%;
+    }
+  }
+  .contactsPage-inf-contacts{
+    display: flex;
+    flex-direction: column;
+    .contactsPage-inf-contacts-item{
+      display: flex;
+      margin-bottom: 1%;
+
+      .contactsPage-inf-contacts-item-descr{
+        @include asideTitle;
+        color: white;
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: 2%;
+      }
+    }
+
+    .contactsPage-inf-contacts-work{
+      display: flex;
+      margin-top: 7%;
+      .contactsPage-inf-contacts-work-item{
+       margin-right: 20%;
+        .contactsPage-inf-contacts-item-title{
+          margin-bottom: 7%;
+          text-align: center;
+        }
+        .contactsPage-inf-contacts-work-item-descr{
+          @include asideTitle;
+          color: white;
+          font-size: 15px;
+          line-height: 20px;
+          text-align: center;
+          margin-bottom: 3%;
+        }
+      }
+    }
+  }
+  .contactsPage-inf-contacts-item-title{
+    font-family: $FontRegularTitle;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .contactsPage-inf-map img{
+    width: 100%;
+  }
+ 
+}

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <title>catalog</title>
+   
+    
+    
 </head>
 <body>
     <div class="content">
@@ -22,8 +25,7 @@
             <ul>
                 <li>понравилось</li>
                 <li>личный кабинет</li>
-                
-                <a href="../catalog.html"><li>каталог</li></a>
+                <li><a href="../catalog.html">каталог</a></li>
             </ul>
     
         <div class="navbar-menu-search">
@@ -36,6 +38,25 @@
             
         </div>
     </div>
+
+    <div class="navbar-menu-mobile">
+        <ul>
+            <li><img src="img/b.png" alt=""></li>
+            <li><img src="img/user.png" alt=""></li>
+            <li><a href="../catalog.html"><img src="img/catalog.png" alt=""></a></li>
+        </ul>
+
+        <div class="navbar-menu-search">
+            <div class="navbar-menu-search-img">
+                <img src="img/bxcart.png" alt="bxcart">
+        </div>
+            <div class="navbar-menu-search-img">
+                <img src="img/search.png" alt="search">
+            </div>
+            
+        </div>
+    </div>
+
 </nav>
         <section class="mensParfumes container">
   <div class="mensParfumes-info">
@@ -79,83 +100,127 @@
     </div>
 
     <form class="catalogProduct-aside-gender">
-      <div>
-        <input type="radio" class="custom-radio" id="genderW" name="gender" value="women">
-        <label for="genderW">женская парфюмерия</label>
-      </div>
-      
-      <div>
-        <input type="radio" class="custom-radio" id="genderM" name="gender" value="man">
-        <label for="genderM">мужская парфюмерия</label>
-      </div>
+
+      <label class="custom-radio">
+        <input type="radio" name="gender" value="women">
+        <span>женская парфюмерия</span>
+      </label>
+
+      <label class="custom-radio">
+        <input type="radio" name="gender" value="man">
+        <span>мужская парфюмерия</span>
+      </label>
+
     </form>
 
-    <form class="catalogProduct-aside-collection">
+    <div class="catalogProduct-aside-collection">
       <div class="catalogProduct-aside-collection-title">
         <div class="catalogProduct-aside-collection-name">коллекции</div>
-        <img src="img/arrowaside.png" alt="arrow">
+        <div class="catalogProduct-aside-collection-arrow">
+          <img src="img/arrowaside.png" alt="arrow">
+        </div>
+        
+      </div>
+      <form class="catalogProduct-aside-collection-filter">
+
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="chanel" value="yes">
+          <span>chanel</span>
+        </label>
+
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="tom_ford" value="yes">
+          <span>tom ford</span>
+        </label>
+
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="Givenchy" value="yes">
+          <span>Givenchy</span>
+        </label>
+
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="Hermès" value="yes">
+          <span>Hermès</span>
+        </label>
+
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="Gucci" value="yes">
+          <span>Gucci</span>
+        </label>
+
+      </form>
+
+      
+    </div>
+
+    <!-- olfactoryGr -->
+
+    <div class="catalogProduct-aside-collection" style="border-bottom: 0;">
+      <div class="catalogProduct-aside-collection-title" >
+        <div class="catalogProduct-aside-collection-name">ольфакторная группа</div>
+        <div class="catalogProduct-aside-collection-arrow">
+          <img src="img/arrowaside.png" alt="arrow">
+        </div>
       </div>
 
-      <input type="checkbox" class="custom-checkbox" id="chanel" name="chanel" value="yes">
-      <label for="chanel">chanel</label>
+      <form class="catalogProduct-aside-collection-filter">
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="woody" value="yes">
+          <span>древесный</span>
+        </label>
 
-      <input type="checkbox" class="custom-checkbox" id="tom_ford" name="tom_ford" value="yes">
-      <label for="tom_ford">tom ford</label>
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="floral" value="yes">
+          <span>цветочный</span>
+        </label>
 
-      <input type="checkbox" class="custom-checkbox" id="Givenchy" name="Givenchy" value="yes">
-      <label for="Givenchy">Givenchy</label>
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="eastern" value="yes">
+          <span>восточный</span>
+        </label>
 
-      <input type="checkbox" class="custom-checkbox" id="Hermès" name="Hermès" value="yes">
-      <label for="Hermès">Hermès</label>
-
-      <input type="checkbox" class="custom-checkbox" id="Gucci" name="Gucci" value="yes">
-      <label for="Gucci">Gucci</label>
-    </form>
-
-    <form class="catalogProduct-aside-olfactoryGr">
-      <div class="catalogProduct-aside-olfactoryGr-title">
-        <div class="catalogProduct-aside-olfactoryGr-name">ольфакторная группа</div>
-        <img src="img/arrowaside.png" alt="arrow">
-      </div>
-
-      <input type="checkbox" class="custom-checkbox" id="woody" name="woody" value="yes">
-      <label for="woody">древесный</label>
-
-      <input type="checkbox" class="custom-checkbox" id="floral" name="floral" value="yes">
-      <label for="floral">цветочный</label>
-
-      <input type="checkbox" class="custom-checkbox" id="eastern" name="eastern" value="yes">
-      <label for="eastern">восточный</label>
-
-      <input type="checkbox" class="custom-checkbox" id="fresh" name="fresh" value="yes">
-      <label for="fresh">свежий</label>
-    </form>
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="fresh" value="yes">
+          <span>свежий</span>
+        </label>
+      </form>
+    </div>
 
   </div>
+
+  <!-- 2 бл -->
 
   <div class="catalogProduct-items">
     <div class="catalogProduct-title">каталог</div>
 
-    <table class="catalogProduct-items-table">
+    <!-- TABLE -->
+
+    <table class="catalogProduct-table">
       <tr>
         <th>
-          <div class="catalogProduct-items-table-item">
+          <div class="catalogProduct-table-item">
             
-            <div class="catalogProduct-items-table-item-img">
-              <img src="img/item.png" alt="item">
-            </div>
-
-            <img src="img/b.png" alt="like">
-  
-            <div class="catalogProduct-items-table-item-decr">
-  
-              <div class="catalogProduct-items-table-item-decr-text">
-                <div class="catalogProduct-items-table-item-decr-brand">CHANEL</div>
-                <div class="catalogProduct-items-table-item-decr-price">165 000 руб.</div>
+            
+            <div class="catalogProduct-table-item-img">
+              <div class="catalogProduct-table-item-img-prod">
+                <div class="catalogProduct-table-item-img-like">
+                  <img src="img/b.png" alt="like" id="like">
+                </div>
+                <img src="img/item.png" alt="item" >
               </div>
+            </div>
+            
+            <div class="catalogProduct-table-item-decr">
   
-              <div class="catalogProduct-items-table-item-decr-btn">
-                <input type="button" value="купить">
+              <div class="catalogProduct-table-item-decr-text">
+                <div class="catalogProduct-table-item-decr-brand">CHANEL</div>
+                <div class="catalogProduct-table-item-decr-price">165 000 руб.</div>
+              </div>
+
+              
+  
+              <div class="catalogProduct-table-item-decr-btn">
+                <input type="button" value="купить" onClick='location.href="../product.html"'>
               </div>
               
             </div>
@@ -164,46 +229,61 @@
   
   
         <th>
-          <div class="catalogProduct-items-table-item">
+          <div class="catalogProduct-table-item">
             
-            <div class="catalogProduct-items-table-item-img">
-              <img src="img/item.png" alt="item">
+            <div class="catalogProduct-table-item-img">
+              
+                
+              <div class="catalogProduct-table-item-img-prod">
+                <div class="catalogProduct-table-item-img-like">
+                  <img src="img/b.png" alt="like" id="like">
+                </div>
+               <img src="img/item.png" alt="item" >
+              </div>
             </div>
             
-            <img src="img/b.png" alt="like">
+            <div class="catalogProduct-table-item-decr">
   
-            <div class="catalogProduct-items-table-item-decr">
-  
-              <div class="catalogProduct-items-table-item-decr-text">
-                <div class="catalogProduct-items-table-item-decr-brand">CHANEL</div>
-                <div class="catalogProduct-items-table-item-decr-price">165 000 руб.</div>
+              <div class="catalogProduct-table-item-decr-text">
+                <div class="catalogProduct-table-item-decr-brand">CHANEL</div>
+                <div class="catalogProduct-table-item-decr-price">165 000 руб.</div>
               </div>
+
+              
   
-              <div class="catalogProduct-items-table-item-decr-btn">
-                <input type="button" value="купить">
+              <div class="catalogProduct-table-item-decr-btn">
+                <input type="button" value="купить" onClick='location.href="../product.html"'>
               </div>
               
             </div>
           </div>
         </th>
+
         <th>
-          <div class="catalogProduct-items-table-item">
+          <div class="catalogProduct-table-item">
             
-            <div class="catalogProduct-items-table-item-img">
-              <img src="img/item.png" alt="item">
-            </div>
-
-            <img src="img/b.png" alt="like">
-
-            <div class="catalogProduct-items-table-item-decr">
-  
-              <div class="catalogProduct-items-table-item-decr-text">
-                <div class="catalogProduct-items-table-item-decr-brand">CHANEL</div>
-                <div class="catalogProduct-items-table-item-decr-price">165 000 руб.</div>
+            <div class="catalogProduct-table-item-img">
+              
+               
+              <div class="catalogProduct-table-item-img-prod">
+                <div class="catalogProduct-table-item-img-like">
+                  <img src="img/b.png" alt="like" id="like">
+                </div>
+                 <img src="img/item.png" alt="item" >
               </div>
+            </div>
+            
+            <div class="catalogProduct-table-item-decr">
   
-              <div class="catalogProduct-items-table-item-decr-btn">
-                <input type="button" value="купить">
+              <div class="catalogProduct-table-item-decr-text">
+                <div class="catalogProduct-table-item-decr-brand">CHANEL</div>
+                <div class="catalogProduct-table-item-decr-price">165 000 руб.</div>
+              </div>
+
+              
+  
+              <div class="catalogProduct-table-item-decr-btn">
+                <input type="button" value="купить" onClick='location.href="../product.html"'>
               </div>
               
             </div>
@@ -213,71 +293,91 @@
   
       <tr>
         <td>
-          <div class="catalogProduct-items-table-item">
+          <div class="catalogProduct-table-item">
             
-            <div class="catalogProduct-items-table-item-img">
-              <img src="img/item.png" alt="item">
-            </div>
-
-            <img src="img/b.png" alt="like">
-  
-            <div class="catalogProduct-items-table-item-decr">
-  
-              <div class="catalogProduct-items-table-item-decr-text">
-                <div class="catalogProduct-items-table-item-decr-brand">CHANEL</div>
-                <div class="catalogProduct-items-table-item-decr-price">165 000 руб.</div>
+            <div class="catalogProduct-table-item-img">
+              
+               
+              <div class="catalogProduct-table-item-img-prod">
+                <div class="catalogProduct-table-item-img-like">
+                  <img src="img/b.png" alt="like" id="like">
+                </div>
+                 <img src="img/item.png" alt="item" >
               </div>
+            </div>
+            
+            <div class="catalogProduct-table-item-decr">
   
-              <div class="catalogProduct-items-table-item-decr-btn">
-                <input type="button" value="купить">
+              <div class="catalogProduct-table-item-decr-text">
+                <div class="catalogProduct-table-item-decr-brand">CHANEL</div>
+                <div class="catalogProduct-table-item-decr-price">165 000 руб.</div>
+              </div>
+
+              
+  
+              <div class="catalogProduct-table-item-decr-btn">
+                <input type="button" value="купить" onClick='location.href="../product.html"'>
+              </div>
+              
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class="catalogProduct-table-item">
+            
+            <div class="catalogProduct-table-item-img">
+             
+               
+              <div class="catalogProduct-table-item-img-prod">
+                <div class="catalogProduct-table-item-img-like">
+                  <img src="img/b.png" alt="like" id="like">
+                </div>
+                 <img src="img/item.png" alt="item" >
+              </div>
+            </div>
+            
+            <div class="catalogProduct-table-item-decr">
+  
+              <div class="catalogProduct-table-item-decr-text">
+                <div class="catalogProduct-table-item-decr-brand">CHANEL</div>
+                <div class="catalogProduct-table-item-decr-price">165 000 руб.</div>
+              </div>
+
+              
+              <div class="catalogProduct-table-item-decr-btn">
+                <input type="button" value="купить" onClick='location.href="../product.html"'>
               </div>
               
             </div>
           </div>
         </td>
         <td>
-          <div class="catalogProduct-items-table-item">
+          <div class="catalogProduct-table-item">
             
-            <div class="catalogProduct-items-table-item-img">
-              <img src="img/item.png" alt="item">
-            </div>
-
-            <img src="img/b.png" alt="like">
-  
-            <div class="catalogProduct-items-table-item-decr">
-  
-              <div class="catalogProduct-items-table-item-decr-text">
-                <div class="catalogProduct-items-table-item-decr-brand">CHANEL</div>
-                <div class="catalogProduct-items-table-item-decr-price">165 000 руб.</div>
-              </div>
-  
-              <div class="catalogProduct-items-table-item-decr-btn">
-                <input type="button" value="купить">
-              </div>
+            <div class="catalogProduct-table-item-img">
               
+                
+              <div class="catalogProduct-table-item-img-prod">
+                <div class="catalogProduct-table-item-img-like">
+                  <img src="img/b.png" alt="like" id="like">
+                </div>
+                <img src="img/item.png" alt="item" >
+              </div>
             </div>
-          </div>
-        </td>
-        <td>
-          <div class="catalogProduct-items-table-item">
             
-            <div class="catalogProduct-items-table-item-img">
-              <img src="img/item.png" alt="item">
-            </div>
+            <div class="catalogProduct-table-item-decr">
+  
+              <div class="catalogProduct-table-item-decr-text">
+                <div class="catalogProduct-table-item-decr-brand">CHANEL</div>
+                <div class="catalogProduct-table-item-decr-price">165 000 руб.</div>
+              </div>
 
-            <img src="img/b.png" alt="like">
   
-            <div class="catalogProduct-items-table-item-decr">
-  
-              <div class="catalogProduct-items-table-item-decr-text">
-                <div class="catalogProduct-items-table-item-decr-brand">CHANEL</div>
-                <div class="catalogProduct-items-table-item-decr-price">165 000 руб.</div>
+              <div class="catalogProduct-table-item-decr-btn">
+                <input type="button" value="купить" onClick='location.href="../product.html"'>
               </div>
-  
-              <div class="catalogProduct-items-table-item-decr-btn">
-                <input type="button" value="купить">
-              </div>
-              
+               
             </div>
           </div>
         </td>
@@ -286,7 +386,159 @@
   </div>
 </section>
         
-        
+
+<section class="exclusive container">
+  <div class="mySlides fade">
+    <img src="img/11.png" style="width: 100%; height: 100%;" alt="1">
+    <div class="color"></div>
+    <div class="text">excluseve PARFUME LOREM ipsum 
+      <div id="t">Nothing lifts your spirits quite like an incredible perfume. Whether you're all about floral fragrances, zesty spritzes or woody accords, find your new signature scent right here. Take your pick from the latest men's and women's fragrances, or rediscover an old classic.</div></div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/22.png" style="width: 100%; height: 100%;" alt="2">
+    <div class="color"></div>
+    <div class="text">excluseve PARFUME LOREM ipsum 
+      <div id="t">Nothing lifts your spirits quite like an incredible perfume. Whether you're all about floral fragrances, zesty spritzes or woody accords, find your new signature scent right here. Take your pick from the latest men's and women's fragrances, or rediscover an old classic.</div></div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/33.png" style="width: 100%; height: 100%;" alt="3">
+    <div class="color"></div>
+    <div class="text">excluseve PARFUME LOREM ipsum 
+      <div id="t">Nothing lifts your spirits quite like an incredible perfume. Whether you're all about floral fragrances, zesty spritzes or woody accords, find your new signature scent right here. Take your pick from the latest men's and women's fragrances, or rediscover an old classic.</div></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)"></a>
+  <a class="next" onclick="plusSlides(1)"></a>
+  
+
+  <script>
+    var slideIndex= 1;
+  showSlides(slideIndex);
+
+  function plusSlides (n) {
+    showSlides(slideIndex+=n);
+  }
+
+  function currentSlide (n) {
+    showSlides(slideIndex =n);
+  }
+
+  function showSlides(n){
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+
+    if (n>slides.length){
+      slideIndex = 1;
+    }
+
+    if (n<1) {
+      slideIndex = slides.length
+    }
+
+    for(i=0; i<slides.length; i++){
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className+= "active";
+  }
+  </script>
+</section>
+        <footer class="footer container">
+<div class="footer-usefulLinks">
+  <div class="footer-title">полезные ссылки</div>
+  <div class="footer-title-line">
+    <img src="img/LineFooter.png" alt="line">
+  </div>
+
+  <ul class="footer-usefulLinks-links">
+    <li>Доставка</li>
+    <li>Оплата</li>
+    <li>Акции</li>
+    <li>Политика конфиденциальности</li>
+    <a href="../about.html">О нас</a>
+  </ul>
+</div>
+
+<div class="footer-contacts">
+  <div class="footer-title">контакты</div>
+  <div class="footer-title-line">
+    <img src="img/LineFooter.png" alt="line">
+  </div>
+
+  <div class="footer-contacts-links">
+    <div class="footer-contacts-links-item">
+      <div class="footer-contacts-links-item-label">
+        <img src="img/phone.png" alt="phone">
+      </div>
+      <div class="footer-contacts-links-item-number">8 (812) 234-56-55</div>
+    </div>
+
+    <div class="footer-contacts-links-item">
+      <div class="footer-contacts-links-item-label">
+        <img src="img/phone.png" alt="phone">
+      </div>
+      <div class="footer-contacts-links-item-number">8 (812) 234-56-55</div>
+    </div>
+
+    <div class="footer-contacts-links-item">
+      <div class="footer-contacts-links-item-label">
+        <img src="img/mail.png" alt="mail">
+      </div>
+      <div class="footer-contacts-links-item-email">PORTEN.ru</div>
+    </div>
+
+    <a href="../contacts.html">Контакты</a>
+  </div>
+</div>
+
+<div class="footer-socialNet">
+  <div class="footer-title">социальные сети</div>
+  <div class="footer-title-line">
+    <img src="img/LineFooter.png" alt="line">
+  </div>
+
+  <div class="footer-socialNet-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</div>
+  <div class="footer-socialNet-labels">
+    <div class="footer-socialNet-labels-link">
+      <img src="img/youtube.png" alt="youtube">
+    </div>
+    <div class="footer-socialNet-labels-link">
+      <img src="img/vk.png" alt="vk">
+    </div>
+    <div class="footer-socialNet-labels-link">
+      <img src="img/facebook.png" alt="facebook">
+    </div>
+    <div class="footer-socialNet-labels-link">
+      <img src="img/telegram.png" alt="tg">
+    </div>
+  </div>
+</div>
+
+</footer>
+        <a id="back2Top" title="Наверх" href="#">&#10148;</a>
+
+<script>
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+
+</script>
     </div>
 </body>
 </html>

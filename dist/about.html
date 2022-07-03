@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Про нас</title>
+   
+    
+    
 </head>
 <body>
-    <div class="content">
+    <div class="content" >
+        
         <nav class="navbar container">
     <div class="navbar-logo">
         <div class="navbar-logo-img">
@@ -22,8 +26,7 @@
             <ul>
                 <li>понравилось</li>
                 <li>личный кабинет</li>
-                
-                <a href="../catalog.html"><li>каталог</li></a>
+                <li><a href="../catalog.html">каталог</a></li>
             </ul>
     
         <div class="navbar-menu-search">
@@ -36,6 +39,25 @@
             
         </div>
     </div>
+
+    <div class="navbar-menu-mobile">
+        <ul>
+            <li><img src="img/b.png" alt=""></li>
+            <li><img src="img/user.png" alt=""></li>
+            <li><a href="../catalog.html"><img src="img/catalog.png" alt=""></a></li>
+        </ul>
+
+        <div class="navbar-menu-search">
+            <div class="navbar-menu-search-img">
+                <img src="img/bxcart.png" alt="bxcart">
+        </div>
+            <div class="navbar-menu-search-img">
+                <img src="img/search.png" alt="search">
+            </div>
+            
+        </div>
+    </div>
+
 </nav>
         <header class="aboutHeader container">
   <div class="header-logo">
@@ -183,6 +205,27 @@
   </div>
   
   </footer>
+        <a id="back2Top" title="Наверх" href="#">&#10148;</a>
+
+<script>
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+
+</script>
     </div>
 </body>
 </html>

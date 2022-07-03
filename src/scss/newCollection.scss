@@ -20,6 +20,12 @@
         @include title;
         padding-bottom: 7%;
       }
+      @media (max-width: 576px) {
+        .newCollection-description-title-name{
+          font-size: 30px;
+          padding-bottom: 0;
+        }
+      }
     }
 
     .newCollection-description-text {
@@ -32,16 +38,45 @@
       text-align: center;
       color: $white;
     }
+    @media (max-width: 576px) {
+      .newCollection-description-text{
+        width: 80%;
+      }
+    }
 
     .newCollection-description-btn {
       padding: 7% 0 10%;
-      input {
+      button {
         @include btn-primary;
         background: transparent;
       }
-      input:hover {
+      button:active,
+      :hover,
+      :focus {
         background-color: $hoverBTN;
       }
+    }
+    @media (max-width: 576px) {
+      .newCollection-description-btn{
+        padding: 7% 0 7%;
+        button{
+          font-size: 13px;
+          padding: 8px 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .newCollection.container {
+    display: flex;
+    flex-direction: column;
+    .newCollection-img {
+      display: none;
+    }
+    .newCollection-description {
+      width: 100%;
+      padding-top: 10%;
     }
   }
 }

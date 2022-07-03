@@ -15,83 +15,127 @@
     </div>
 
     <form class="catalogProduct-aside-gender">
-      <div>
-        <input type="radio" class="custom-radio" id="genderW" name="gender" value="women">
-        <label for="genderW">женская парфюмерия</label>
-      </div>
-      
-      <div>
-        <input type="radio" class="custom-radio" id="genderM" name="gender" value="man">
-        <label for="genderM">мужская парфюмерия</label>
-      </div>
+
+      <label class="custom-radio">
+        <input type="radio" name="gender" value="women">
+        <span>женская парфюмерия</span>
+      </label>
+
+      <label class="custom-radio">
+        <input type="radio" name="gender" value="man">
+        <span>мужская парфюмерия</span>
+      </label>
+
     </form>
 
-    <form class="catalogProduct-aside-collection">
+    <div class="catalogProduct-aside-collection">
       <div class="catalogProduct-aside-collection-title">
         <div class="catalogProduct-aside-collection-name">коллекции</div>
-        <img src="@img/arrowaside.png" alt="arrow">
+        <div class="catalogProduct-aside-collection-arrow">
+          <img src="@img/arrowaside.png" alt="arrow">
+        </div>
+        
+      </div>
+      <form class="catalogProduct-aside-collection-filter">
+
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="chanel" value="yes">
+          <span>chanel</span>
+        </label>
+
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="tom_ford" value="yes">
+          <span>tom ford</span>
+        </label>
+
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="Givenchy" value="yes">
+          <span>Givenchy</span>
+        </label>
+
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="Hermès" value="yes">
+          <span>Hermès</span>
+        </label>
+
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="Gucci" value="yes">
+          <span>Gucci</span>
+        </label>
+
+      </form>
+
+      
+    </div>
+
+    <!-- olfactoryGr -->
+
+    <div class="catalogProduct-aside-collection" style="border-bottom: 0;">
+      <div class="catalogProduct-aside-collection-title" >
+        <div class="catalogProduct-aside-collection-name">ольфакторная группа</div>
+        <div class="catalogProduct-aside-collection-arrow">
+          <img src="@img/arrowaside.png" alt="arrow">
+        </div>
       </div>
 
-      <input type="checkbox" class="custom-checkbox" id="chanel" name="chanel" value="yes">
-      <label for="chanel">chanel</label>
+      <form class="catalogProduct-aside-collection-filter">
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="woody" value="yes">
+          <span>древесный</span>
+        </label>
 
-      <input type="checkbox" class="custom-checkbox" id="tom_ford" name="tom_ford" value="yes">
-      <label for="tom_ford">tom ford</label>
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="floral" value="yes">
+          <span>цветочный</span>
+        </label>
 
-      <input type="checkbox" class="custom-checkbox" id="Givenchy" name="Givenchy" value="yes">
-      <label for="Givenchy">Givenchy</label>
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="eastern" value="yes">
+          <span>восточный</span>
+        </label>
 
-      <input type="checkbox" class="custom-checkbox" id="Hermès" name="Hermès" value="yes">
-      <label for="Hermès">Hermès</label>
-
-      <input type="checkbox" class="custom-checkbox" id="Gucci" name="Gucci" value="yes">
-      <label for="Gucci">Gucci</label>
-    </form>
-
-    <form class="catalogProduct-aside-olfactoryGr">
-      <div class="catalogProduct-aside-olfactoryGr-title">
-        <div class="catalogProduct-aside-olfactoryGr-name">ольфакторная группа</div>
-        <img src="@img/arrowaside.png" alt="arrow">
-      </div>
-
-      <input type="checkbox" class="custom-checkbox" id="woody" name="woody" value="yes">
-      <label for="woody">древесный</label>
-
-      <input type="checkbox" class="custom-checkbox" id="floral" name="floral" value="yes">
-      <label for="floral">цветочный</label>
-
-      <input type="checkbox" class="custom-checkbox" id="eastern" name="eastern" value="yes">
-      <label for="eastern">восточный</label>
-
-      <input type="checkbox" class="custom-checkbox" id="fresh" name="fresh" value="yes">
-      <label for="fresh">свежий</label>
-    </form>
+        <label class="custom-checkbox">
+          <input type="checkbox"  name="fresh" value="yes">
+          <span>свежий</span>
+        </label>
+      </form>
+    </div>
 
   </div>
+
+  <!-- 2 бл -->
 
   <div class="catalogProduct-items">
     <div class="catalogProduct-title">каталог</div>
 
-    <table class="catalogProduct-items-table">
+    <!-- TABLE -->
+
+    <table class="catalogProduct-table">
       <tr>
         <th>
-          <div class="catalogProduct-items-table-item">
+          <div class="catalogProduct-table-item">
             
-            <div class="catalogProduct-items-table-item-img">
-              <img src="@img/item.png" alt="item">
-            </div>
-
-            <img src="@img/b.png" alt="like">
-  
-            <div class="catalogProduct-items-table-item-decr">
-  
-              <div class="catalogProduct-items-table-item-decr-text">
-                <div class="catalogProduct-items-table-item-decr-brand">CHANEL</div>
-                <div class="catalogProduct-items-table-item-decr-price">165 000 руб.</div>
+            
+            <div class="catalogProduct-table-item-img">
+              <div class="catalogProduct-table-item-img-prod">
+                <div class="catalogProduct-table-item-img-like">
+                  <img src="@img/b.png" alt="like" id="like">
+                </div>
+                <img src="@img/item.png" alt="item" >
               </div>
+            </div>
+            
+            <div class="catalogProduct-table-item-decr">
   
-              <div class="catalogProduct-items-table-item-decr-btn">
-                <input type="button" value="купить">
+              <div class="catalogProduct-table-item-decr-text">
+                <div class="catalogProduct-table-item-decr-brand">CHANEL</div>
+                <div class="catalogProduct-table-item-decr-price">165 000 руб.</div>
+              </div>
+
+              
+  
+              <div class="catalogProduct-table-item-decr-btn">
+                <input type="button" value="купить" onClick='location.href="../product.html"'>
               </div>
               
             </div>
@@ -100,46 +144,61 @@
   
   
         <th>
-          <div class="catalogProduct-items-table-item">
+          <div class="catalogProduct-table-item">
             
-            <div class="catalogProduct-items-table-item-img">
-              <img src="@img/item.png" alt="item">
+            <div class="catalogProduct-table-item-img">
+              
+                
+              <div class="catalogProduct-table-item-img-prod">
+                <div class="catalogProduct-table-item-img-like">
+                  <img src="@img/b.png" alt="like" id="like">
+                </div>
+               <img src="@img/item.png" alt="item" >
+              </div>
             </div>
             
-            <img src="@img/b.png" alt="like">
+            <div class="catalogProduct-table-item-decr">
   
-            <div class="catalogProduct-items-table-item-decr">
-  
-              <div class="catalogProduct-items-table-item-decr-text">
-                <div class="catalogProduct-items-table-item-decr-brand">CHANEL</div>
-                <div class="catalogProduct-items-table-item-decr-price">165 000 руб.</div>
+              <div class="catalogProduct-table-item-decr-text">
+                <div class="catalogProduct-table-item-decr-brand">CHANEL</div>
+                <div class="catalogProduct-table-item-decr-price">165 000 руб.</div>
               </div>
+
+              
   
-              <div class="catalogProduct-items-table-item-decr-btn">
-                <input type="button" value="купить">
+              <div class="catalogProduct-table-item-decr-btn">
+                <input type="button" value="купить" onClick='location.href="../product.html"'>
               </div>
               
             </div>
           </div>
         </th>
+
         <th>
-          <div class="catalogProduct-items-table-item">
+          <div class="catalogProduct-table-item">
             
-            <div class="catalogProduct-items-table-item-img">
-              <img src="@img/item.png" alt="item">
-            </div>
-
-            <img src="@img/b.png" alt="like">
-
-            <div class="catalogProduct-items-table-item-decr">
-  
-              <div class="catalogProduct-items-table-item-decr-text">
-                <div class="catalogProduct-items-table-item-decr-brand">CHANEL</div>
-                <div class="catalogProduct-items-table-item-decr-price">165 000 руб.</div>
+            <div class="catalogProduct-table-item-img">
+              
+               
+              <div class="catalogProduct-table-item-img-prod">
+                <div class="catalogProduct-table-item-img-like">
+                  <img src="@img/b.png" alt="like" id="like">
+                </div>
+                 <img src="@img/item.png" alt="item" >
               </div>
+            </div>
+            
+            <div class="catalogProduct-table-item-decr">
   
-              <div class="catalogProduct-items-table-item-decr-btn">
-                <input type="button" value="купить">
+              <div class="catalogProduct-table-item-decr-text">
+                <div class="catalogProduct-table-item-decr-brand">CHANEL</div>
+                <div class="catalogProduct-table-item-decr-price">165 000 руб.</div>
+              </div>
+
+              
+  
+              <div class="catalogProduct-table-item-decr-btn">
+                <input type="button" value="купить" onClick='location.href="../product.html"'>
               </div>
               
             </div>
@@ -149,71 +208,91 @@
   
       <tr>
         <td>
-          <div class="catalogProduct-items-table-item">
+          <div class="catalogProduct-table-item">
             
-            <div class="catalogProduct-items-table-item-img">
-              <img src="@img/item.png" alt="item">
-            </div>
-
-            <img src="@img/b.png" alt="like">
-  
-            <div class="catalogProduct-items-table-item-decr">
-  
-              <div class="catalogProduct-items-table-item-decr-text">
-                <div class="catalogProduct-items-table-item-decr-brand">CHANEL</div>
-                <div class="catalogProduct-items-table-item-decr-price">165 000 руб.</div>
+            <div class="catalogProduct-table-item-img">
+              
+               
+              <div class="catalogProduct-table-item-img-prod">
+                <div class="catalogProduct-table-item-img-like">
+                  <img src="@img/b.png" alt="like" id="like">
+                </div>
+                 <img src="@img/item.png" alt="item" >
               </div>
+            </div>
+            
+            <div class="catalogProduct-table-item-decr">
   
-              <div class="catalogProduct-items-table-item-decr-btn">
-                <input type="button" value="купить">
+              <div class="catalogProduct-table-item-decr-text">
+                <div class="catalogProduct-table-item-decr-brand">CHANEL</div>
+                <div class="catalogProduct-table-item-decr-price">165 000 руб.</div>
+              </div>
+
+              
+  
+              <div class="catalogProduct-table-item-decr-btn">
+                <input type="button" value="купить" onClick='location.href="../product.html"'>
+              </div>
+              
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class="catalogProduct-table-item">
+            
+            <div class="catalogProduct-table-item-img">
+             
+               
+              <div class="catalogProduct-table-item-img-prod">
+                <div class="catalogProduct-table-item-img-like">
+                  <img src="@img/b.png" alt="like" id="like">
+                </div>
+                 <img src="@img/item.png" alt="item" >
+              </div>
+            </div>
+            
+            <div class="catalogProduct-table-item-decr">
+  
+              <div class="catalogProduct-table-item-decr-text">
+                <div class="catalogProduct-table-item-decr-brand">CHANEL</div>
+                <div class="catalogProduct-table-item-decr-price">165 000 руб.</div>
+              </div>
+
+              
+              <div class="catalogProduct-table-item-decr-btn">
+                <input type="button" value="купить" onClick='location.href="../product.html"'>
               </div>
               
             </div>
           </div>
         </td>
         <td>
-          <div class="catalogProduct-items-table-item">
+          <div class="catalogProduct-table-item">
             
-            <div class="catalogProduct-items-table-item-img">
-              <img src="@img/item.png" alt="item">
-            </div>
-
-            <img src="@img/b.png" alt="like">
-  
-            <div class="catalogProduct-items-table-item-decr">
-  
-              <div class="catalogProduct-items-table-item-decr-text">
-                <div class="catalogProduct-items-table-item-decr-brand">CHANEL</div>
-                <div class="catalogProduct-items-table-item-decr-price">165 000 руб.</div>
-              </div>
-  
-              <div class="catalogProduct-items-table-item-decr-btn">
-                <input type="button" value="купить">
-              </div>
+            <div class="catalogProduct-table-item-img">
               
+                
+              <div class="catalogProduct-table-item-img-prod">
+                <div class="catalogProduct-table-item-img-like">
+                  <img src="@img/b.png" alt="like" id="like">
+                </div>
+                <img src="@img/item.png" alt="item" >
+              </div>
             </div>
-          </div>
-        </td>
-        <td>
-          <div class="catalogProduct-items-table-item">
             
-            <div class="catalogProduct-items-table-item-img">
-              <img src="@img/item.png" alt="item">
-            </div>
+            <div class="catalogProduct-table-item-decr">
+  
+              <div class="catalogProduct-table-item-decr-text">
+                <div class="catalogProduct-table-item-decr-brand">CHANEL</div>
+                <div class="catalogProduct-table-item-decr-price">165 000 руб.</div>
+              </div>
 
-            <img src="@img/b.png" alt="like">
   
-            <div class="catalogProduct-items-table-item-decr">
-  
-              <div class="catalogProduct-items-table-item-decr-text">
-                <div class="catalogProduct-items-table-item-decr-brand">CHANEL</div>
-                <div class="catalogProduct-items-table-item-decr-price">165 000 руб.</div>
+              <div class="catalogProduct-table-item-decr-btn">
+                <input type="button" value="купить" onClick='location.href="../product.html"'>
               </div>
-  
-              <div class="catalogProduct-items-table-item-decr-btn">
-                <input type="button" value="купить">
-              </div>
-              
+               
             </div>
           </div>
         </td>

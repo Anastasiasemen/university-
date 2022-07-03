@@ -1,16 +1,21 @@
 .catalogProduct.container {
   background-color: $black;
   color: $white;
-  padding: 90px 0;
+  padding: 100px 0 90px;
   display: flex;
-
+label{
+  background: transparent;
+  text-align: left;
+  padding: 10px 0em;
+}
   .catalogProduct-aside {
-    margin-left: 50px;
+    margin: 145px 0 0 50px;
     .catalogProduct-aside-parfumer {
       display: flex;
       flex-direction: column;
       justify-items: start;
       margin-bottom: 30px;
+      border-bottom: 1px solid $white;
       .catalogProduct-aside-parfumer-title {
         display: flex;
         align-items: center;
@@ -28,9 +33,9 @@
 
       .catalogProduct-aside-parfumer-search {
         border: none;
-        width: 50%;
-        padding-bottom: 30px;
-        border-bottom: 1px solid $white;
+        width: 90%;
+        padding-bottom: 30px; 
+
         input {
           background: transparent;
           width: 100%;
@@ -61,6 +66,281 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      padding-bottom: 30px;
+      border-bottom: 1px solid $white;
+
+      //radio
+      .custom-radio > input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+      }
+
+      .custom-radio > span {
+        display: inline-flex;
+        align-items: flex-start;
+        user-select: none;
+        @include asideTitle;
+      }
+
+      .custom-radio > span::before {
+        content: "";
+        display: inline-block;
+        width: 0.8em;
+        height: 0.8em;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid $backgroundCon;
+        border-radius: 50%;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 40% 40%;
+      }
+
+      .custom-radio > input:not(:disabled):not(:checked) + span:hover::before {
+        border-color: $backgroundCon;
+      }
+
+      .custom-radio > input:not(:disabled):active + span::before {
+        background-color: $backgroundCon;
+        border-color: $backgroundCon;
+      }
+
+      .custom-radio > input:focus + span::before {
+        box-shadow: 0 0 0 0.2rem $black;
+      }
+
+      .custom-radio > input:focus:not(:checked) + span::before {
+        border-color: $white;
+      }
+
+      .custom-radio > input:checked + span::before {
+        border-color: $white;
+        background-color: $black;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+      }
+
+      .custom-radio > input:disabled + span::before {
+        background-color: #e9ecef;
+      }
+    }
+
+    .catalogProduct-aside-collection {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px 0 30px;
+      border-bottom: 1px solid $white;
+
+      .catalogProduct-aside-collection-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        .catalogProduct-aside-collection-name {
+          @include asideTitle;
+          margin-right: 7px;
+        }
+        .catalogProduct-aside-collection-arrow {
+          img {
+            width: 70%;
+          }
+        }
+      }
+
+      .catalogProduct-aside-collection-filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include asideTitle;
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 3%;
+
+        /* checkbox */
+        .custom-checkbox > input {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+        }
+
+        .custom-checkbox > span {
+          display: inline-flex;
+          align-items: flex-start;
+          user-select: none;
+        }
+
+        .custom-checkbox > span::before {
+          content: "";
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          flex-shrink: 0;
+          flex-grow: 0;
+          border: 1px solid $white;
+          border-radius: 0.25em;
+          margin-right: 0.5em;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 50% 50%;
+        }
+
+        .custom-checkbox
+          > input:not(:disabled):not(:checked)
+          + span:hover::before {
+          border-color: $white;
+        }
+
+        .custom-checkbox > input:not(:disabled):active + span::before {
+          background-color: $white;
+          border-color: #b3d7ff;
+        }
+
+        .custom-checkbox > input:focus + span::before {
+          box-shadow: 0 0 0 0.2rem $black;
+        }
+
+        .custom-checkbox > input:focus:not(:checked) + span::before {
+          border-color: $white;
+        }
+
+        .custom-checkbox > input:checked + span::before {
+          border-color: $white;
+          background-color: $black;
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+        }
+
+        .custom-checkbox > input:disabled + span::before {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  .catalogProduct-items {
+    @include centerColumn;
+    margin: auto;
+
+    .catalogProduct-title {
+      @include title;
+      padding-bottom: 2%;
+      margin-bottom: 80px;
+      border-bottom: 1px $backgroundCon solid;
+    }
+
+    //TABLE
+
+    .catalogProduct-table {
+      th,
+      td {
+        .catalogProduct-table-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+          text-align: left;
+          margin: 0 70px 70px 0;
+
+          .catalogProduct-table-item-img {
+            .catalogProduct-table-item-img-prod {
+              background-color: #191b1c;
+              padding: 15% 10% 25% 0;
+
+              .catalogProduct-table-item-img-like {
+                display: none;
+                
+              }
+              img {
+                width: 120%;
+              }
+            }
+          }
+
+          .catalogProduct-table-item-decr {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .catalogProduct-table-item-decr-text {
+              padding-left: 10px;
+              .catalogProduct-table-item-decr-brand {
+                font-family: $FontRegularTitle;
+                font-size: 22px;
+                line-height: 25px;
+                color: $white;
+                font-weight: normal;
+                margin: 25px 0 10px;
+              }
+              .catalogProduct-table-item-decr-price {
+                font-family: $FontRegularTitle;
+                font-size: 18px;
+                line-height: 20px;
+                color: #d0d0d0;
+                font-weight: normal;
+              }
+            }
+
+            .catalogProduct-table-item-decr-btn {
+              display: none;
+            }
+          }
+        }
+
+     
+
+        .catalogProduct-table-item:hover {
+          .catalogProduct-table-item-img {
+         
+
+            .catalogProduct-table-item-img-prod {
+              padding: 2% 5% 5% 0;
+              background-color: transparent;
+              .catalogProduct-table-item-img-like {
+                display: block;
+                position: relative;
+                padding-left: 89%;
+                width: 11%;
+                img {
+                  width: 100%;
+                }
+              }
+
+              img {
+                width: 130%;
+              }
+            }
+          }
+          .catalogProduct-table-item-decr {
+            .catalogProduct-table-item-decr-brand {
+              font-size: 25px;
+              line-height: 30px;
+            }
+            .catalogProduct-table-item-decr-price {
+              font-size: 20px;
+              line-height: 22px;
+            }
+
+            .catalogProduct-table-item-decr-btn {
+              display: block;
+              input {
+                @include btn-buy;
+              }
+              input:hover {
+                background-color: $hoverBTN;
+              }
+            }
+          }
+        }
+        .catalogProduct-table-item-img-like {
+          img:focus,
+          :active {
+            opacity: 0;
+            visibility: hidden;
+
+          
+          }
+        }
+      }
     }
   }
 }

@@ -10,6 +10,9 @@
 @import "./subscription.scss";
 @import "./footer.scss";
 
+@import "./properties.scss";
+@import "./contactsPage.scss";
+
 //about
 @import "./aboutHeader.scss";
 @import "./aboutProperties.scss";
@@ -23,9 +26,20 @@
 @import "./mensParfumes.scss";
 @import "./womensParfumes.scss";
 @import "./catalogProduct.scss";
+@import "./exclusive.scss";
+
+//product
+@import "./productHeader.scss";
+@import "./productDetails.scss";
+
+//arrow
+@import "./arrow.scss";
+
+@import "./proba.scss";
 
 body {
   margin: 0;
+
   .content {
     width: 100%;
   }

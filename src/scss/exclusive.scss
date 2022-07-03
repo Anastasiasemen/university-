@@ -1,0 +1,102 @@
+.exclusive.container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 4%;
+    height: 98%;
+    width: auto;
+    margin-top: -22px;
+    padding-left: 10%;
+    color: $white;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .text {
+    position: absolute;
+    bottom: 7%;
+    left: 30%;
+    @include asideTitle;
+    color: $white;
+    text-align: center;
+    width: 40%;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s ease;
+    #t {
+      @include textLinks;
+      color: $white;
+      text-align: center;
+    }
+  }
+
+  .active:hover {
+    background-color: $black;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    background:$ochre;
+    .color {
+      display: none;
+    }
+    img {
+      height: 100%;
+    }
+  }
+  .fade:hover,
+  :active,
+  :focus {
+    .color {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0.28%;
+      background: linear-gradient(
+        0deg,
+        rgba(15, 15, 15, 0.5),
+        rgba(15, 15, 15, 0.5)
+      );
+      bottom: 0;
+    }
+    .text {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
